@@ -1,6 +1,6 @@
 //! Register types and the core interface for armv6-M
 
-use super::{Dfsr, State, ARM_REGISTER_FILE};
+use super::{ArmError, Dfsr, State, ARM_REGISTER_FILE};
 
 use crate::architecture::arm::sequences::ArmDebugSequence;
 use crate::core::{RegisterDescription, RegisterFile, RegisterKind};
@@ -759,12 +759,20 @@ impl<'probe> CoreInterface for Armv6m<'probe> {
     }
 
     fn read_core_reg(&mut self, address: CoreRegisterAddress) -> Result<u32, Error> {
-        self.memory.read_core_reg(address)
+        if self.state.current_state.is_halted() {
+            self.memory.read_core_reg(address)
+        } else {
+            Err(Error::architecture_specific(ArmError::CoreNotHalted))
+        }
     }
 
-    fn write_core_reg(&mut self, address: CoreRegisterAddress, value: u32) -> Result<()> {
-        self.memory.write_core_reg(address, value)?;
-        Ok(())
+    fn write_core_reg(&mut self, address: CoreRegisterAddress, value: u32) -> Result<(), Error> {
+        if self.state.current_state.is_halted() {
+            self.memory.write_core_reg(address, value)?;
+            Ok(())
+        } else {
+            Err(Error::architecture_specific(ArmError::CoreNotHalted))
+        }
     }
 
     /// See docs on the [`CoreInterface::get_hw_breakpoints`] trait

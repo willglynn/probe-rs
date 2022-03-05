@@ -72,7 +72,7 @@ pub trait MemoryInterface {
 
     /// Write a 32bit word at `address`.
     ///
-    /// The address where the write should be performed at has to be word aligned.
+    /// The address where the write should be performed at has tgio be word aligned.
     /// Returns `AccessPortError::MemoryNotAligned` if this does not hold true.
     fn write_word_32(&mut self, address: u32, data: u32) -> Result<(), error::Error>;
 
@@ -194,10 +194,12 @@ impl<'probe> Memory<'probe> {
         self.inner.flush()
     }
 
+    /// NOTE: This will only succeed if the core is halted!
     pub fn read_core_reg(&mut self, addr: CoreRegisterAddress) -> Result<u32, error::Error> {
         self.inner.read_core_reg(self.ap_sel, addr)
     }
 
+    /// NOTE: This will only succeed if the core is halted!
     pub fn write_core_reg(
         &mut self,
         addr: CoreRegisterAddress,

@@ -14,7 +14,7 @@ use anyhow::Result;
 
 use bitfield::bitfield;
 
-use super::{Dfsr, State, ARM_REGISTER_FILE};
+use super::{ArmError, Dfsr, State, ARM_REGISTER_FILE};
 use std::sync::Arc;
 use std::{
     mem::size_of,
@@ -205,12 +205,20 @@ impl<'probe> CoreInterface for Armv8m<'probe> {
     }
 
     fn read_core_reg(&mut self, address: CoreRegisterAddress) -> Result<u32, Error> {
-        self.memory.read_core_reg(address)
+        if self.state.current_state.is_halted() {
+            self.memory.read_core_reg(address)
+        } else {
+            Err(Error::architecture_specific(ArmError::CoreNotHalted))
+        }
     }
 
-    fn write_core_reg(&mut self, address: CoreRegisterAddress, value: u32) -> Result<()> {
-        self.memory.write_core_reg(address, value)?;
-        Ok(())
+    fn write_core_reg(&mut self, address: CoreRegisterAddress, value: u32) -> Result<(), Error> {
+        if self.state.current_state.is_halted() {
+            self.memory.write_core_reg(address, value)?;
+            Ok(())
+        } else {
+            Err(Error::architecture_specific(ArmError::CoreNotHalted))
+        }
     }
 
     fn get_available_breakpoint_units(&mut self) -> Result<u32, Error> {

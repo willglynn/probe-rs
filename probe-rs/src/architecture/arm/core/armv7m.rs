@@ -8,7 +8,7 @@ use crate::error::Error;
 use crate::memory::Memory;
 use crate::DebugProbeError;
 
-use super::{register, Dfsr, State, ARM_REGISTER_FILE};
+use super::{register, ArmError, Dfsr, State, ARM_REGISTER_FILE};
 use crate::{
     core::{Architecture, CoreStatus, HaltReason},
     MemoryInterface,
@@ -730,13 +730,20 @@ impl<'probe> CoreInterface for Armv7m<'probe> {
     }
 
     fn read_core_reg(&mut self, address: CoreRegisterAddress) -> Result<u32, Error> {
-        self.memory.read_core_reg(address)
+        if self.state.current_state.is_halted() {
+            self.memory.read_core_reg(address)
+        } else {
+            Err(Error::architecture_specific(ArmError::CoreNotHalted))
+        }
     }
 
-    fn write_core_reg(&mut self, address: CoreRegisterAddress, value: u32) -> Result<()> {
-        self.memory.write_core_reg(address, value)?;
-
-        Ok(())
+    fn write_core_reg(&mut self, address: CoreRegisterAddress, value: u32) -> Result<(), Error> {
+        if self.state.current_state.is_halted() {
+            self.memory.write_core_reg(address, value)?;
+            Ok(())
+        } else {
+            Err(Error::architecture_specific(ArmError::CoreNotHalted))
+        }
     }
 
     fn halt(&mut self, timeout: Duration) -> Result<CoreInformation, Error> {

@@ -202,7 +202,11 @@ pub trait CoreInterface: MemoryInterface {
 
     fn read_core_reg(&mut self, address: CoreRegisterAddress) -> Result<u32, error::Error>;
 
-    fn write_core_reg(&mut self, address: CoreRegisterAddress, value: u32) -> Result<()>;
+    fn write_core_reg(
+        &mut self,
+        address: CoreRegisterAddress,
+        value: u32,
+    ) -> Result<(), error::Error>;
 
     fn get_available_breakpoint_units(&mut self) -> Result<u32, error::Error>;
 
@@ -442,7 +446,7 @@ impl<'probe> Core<'probe> {
         address: CoreRegisterAddress,
         value: u32,
     ) -> Result<(), error::Error> {
-        Ok(self.inner.write_core_reg(address, value)?)
+        self.inner.write_core_reg(address, value)
     }
 
     pub fn get_available_breakpoint_units(&mut self) -> Result<u32, error::Error> {
