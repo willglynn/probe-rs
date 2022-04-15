@@ -28,8 +28,60 @@ pub trait ArmProbe: SwdSequence {
     fn read_8(&mut self, ap: MemoryAp, address: u32, data: &mut [u8]) -> Result<(), Error>;
     fn read_32(&mut self, ap: MemoryAp, address: u32, data: &mut [u32]) -> Result<(), Error>;
 
+    /// Read a block of 8bit words at `address`. May use 32 bit memory access,
+    /// so should only be used if reading memory locations that don't have side
+    /// effects. Generally faster than [`MemoryInterface::read_8`].
+    fn read(&mut self, ap: MemoryAp, address: u32, data: &mut [u8]) -> Result<(), Error> {
+        let len = data.len();
+        if address % 4 == 0 && len % 4 == 0 {
+            let mut buffer = vec![0u32; len / 4];
+            self.read_32(ap, address, &mut buffer)?;
+            for (bytes, value) in data.chunks_exact_mut(4).zip(buffer.iter()) {
+                bytes.copy_from_slice(&u32::to_le_bytes(*value));
+            }
+        } else {
+            let start_extra_count = (address % 4) as usize;
+            let mut buffer = vec![0u32; (start_extra_count + len + 3) / 4];
+            let read_address = address - start_extra_count as u32;
+            self.read_32(ap, read_address, &mut buffer)?;
+            for (bytes, value) in data
+                .chunks_exact_mut(4)
+                .zip(buffer[start_extra_count..start_extra_count + len].iter())
+            {
+                bytes.copy_from_slice(&u32::to_le_bytes(*value));
+            }
+        }
+        Ok(())
+    }
+
     fn write_8(&mut self, ap: MemoryAp, address: u32, data: &[u8]) -> Result<(), Error>;
     fn write_32(&mut self, ap: MemoryAp, address: u32, data: &[u32]) -> Result<(), Error>;
+
+    /// Write a block of 8bit words to `address`. May use 32 bit memory access,
+    /// so it should only be used if writing memory locations that don't have side
+    /// effects. Generally faster than [`MemoryInterface::write_8`].
+    fn write(&mut self, ap: MemoryAp, address: u32, data: &[u8]) -> Result<(), Error> {
+        let len = data.len();
+        if address % 4 == 0 && data.len() % 4 == 0 {
+            let mut buffer = vec![0u32; data.len() / 4];
+            for (bytes, value) in data.chunks_exact(4).zip(buffer.iter()) {
+                bytes.copy_from_slice(&u32::to_le_bytes(*value));
+            }
+            self.write_32(ap, address, &mut buffer)?;
+        } else {
+            let start_extra_count = (address % 4) as usize;
+            let mut buffer = vec![0u32; (start_extra_count + data.len() + 3) / 4];
+            let read_address = address - start_extra_count as u32;
+            self.read_32(ap, read_address, &mut buffer)?;
+            for (bytes, value) in data
+                .chunks_exact_mut(4)
+                .zip(buffer[start_extra_count..start_extra_count + data.len()].iter())
+            {
+                bytes.copy_from_slice(&u32::to_le_bytes(*value));
+            }
+        }
+        Ok(())
+    }
 
     fn flush(&mut self) -> Result<(), Error>;
 

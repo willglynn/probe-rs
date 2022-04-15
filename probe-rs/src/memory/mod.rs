@@ -18,7 +18,7 @@ pub trait MemoryInterface {
     /// Read a 32bit word of at `address`.
     ///
     /// The address where the read should be performed at has to be word aligned.
-    /// Returns `AccessPortError::MemoryNotAligned` if this does not hold true.
+    /// Returns [`AccessPortError::MemoryNotAligned`] if this does not hold true.
     fn read_word_32(&mut self, address: u32) -> Result<u32, error::Error>;
 
     /// Read an 8bit word of at `address`.
@@ -28,44 +28,33 @@ pub trait MemoryInterface {
     ///
     /// The number of words read is `data.len()`.
     /// The address where the read should be performed at has to be word aligned.
-    /// Returns `AccessPortError::MemoryNotAligned` if this does not hold true.
+    /// Returns [`AccessPortError::MemoryNotAligned`] if this does not hold true.
     fn read_32(&mut self, address: u32, data: &mut [u32]) -> Result<(), error::Error>;
 
     /// Read a block of 8bit words at `address`.
     fn read_8(&mut self, address: u32, data: &mut [u8]) -> Result<(), error::Error>;
 
-    /// Reads bytes using 32 bit memory access. Address must be 32 bit aligned
-    /// and data must be an exact multiple of 4.
-    fn read_mem_32bit(&mut self, address: u32, data: &mut [u8]) -> Result<(), error::Error> {
-        // Default implementation uses `read_32`, then converts u32 values back
-        // to bytes. Assumes target is little endian. May be overridden to
-        // provide an implementation that avoids heap allocation and endian
-        // conversions. Must be overridden for big endian targets.
-        if data.len() % 4 != 0 {
-            return Err(error::Error::Other(anyhow!(
-                "Call to read_mem_32bit with data.len() not a multiple of 4"
-            )));
-        }
-        let mut buffer = vec![0u32; data.len() / 4];
-        self.read_32(address, &mut buffer)?;
-        for (bytes, value) in data.chunks_exact_mut(4).zip(buffer.iter()) {
-            bytes.copy_from_slice(&u32::to_le_bytes(*value));
-        }
-        Ok(())
-    }
-
     /// Read a block of 8bit words at `address`. May use 32 bit memory access,
     /// so should only be used if reading memory locations that don't have side
-    /// effects. Generally faster than `read_8`.
+    /// effects. Generally faster than [`MemoryInterface::read_8`].
     fn read(&mut self, address: u32, data: &mut [u8]) -> Result<(), error::Error> {
         if address % 4 == 0 && data.len() % 4 == 0 {
-            // Avoid heap allocation and copy if we don't need it.
-            self.read_mem_32bit(address, data)?;
+            let mut buffer = vec![0u32; data.len() / 4];
+            self.read_32(address, &mut buffer)?;
+            for (bytes, value) in data.chunks_exact_mut(4).zip(buffer.iter()) {
+                bytes.copy_from_slice(&u32::to_le_bytes(*value));
+            }
         } else {
             let start_extra_count = (address % 4) as usize;
-            let mut buffer = vec![0u8; (start_extra_count + data.len() + 3) / 4 * 4];
-            self.read_mem_32bit(address - start_extra_count as u32, &mut buffer)?;
-            data.copy_from_slice(&buffer[start_extra_count..start_extra_count + data.len()]);
+            let mut buffer = vec![0u32; (start_extra_count + data.len() + 3) / 4];
+            let read_address = address - start_extra_count as u32;
+            self.read_32(read_address, &mut buffer)?;
+            for (bytes, value) in data
+                .chunks_exact_mut(4)
+                .zip(buffer[start_extra_count..start_extra_count + data.len()].iter())
+            {
+                bytes.copy_from_slice(&u32::to_le_bytes(*value));
+            }
         }
         Ok(())
     }
@@ -73,7 +62,7 @@ pub trait MemoryInterface {
     /// Write a 32bit word at `address`.
     ///
     /// The address where the write should be performed at has to be word aligned.
-    /// Returns `AccessPortError::MemoryNotAligned` if this does not hold true.
+    /// Returns [`AccessPortError::MemoryNotAligned`] if this does not hold true.
     fn write_word_32(&mut self, address: u32, data: u32) -> Result<(), error::Error>;
 
     /// Write an 8bit word at `address`.
@@ -83,11 +72,36 @@ pub trait MemoryInterface {
     ///
     /// The number of words written is `data.len()`.
     /// The address where the write should be performed at has to be word aligned.
-    /// Returns `AccessPortError::MemoryNotAligned` if this does not hold true.
+    /// Returns [`AccessPortError::MemoryNotAligned`] if this does not hold true.
     fn write_32(&mut self, address: u32, data: &[u32]) -> Result<(), error::Error>;
 
     /// Write a block of 8bit words at `address`.
     fn write_8(&mut self, address: u32, data: &[u8]) -> Result<(), error::Error>;
+
+    /// Read a block of 8bit words at `address`. May use 32 bit memory access,
+    /// so should only be used if reading memory locations that don't have side
+    /// effects. Generally faster than [`MemoryInterface::read_8`].
+    fn write(&mut self, address: u32, data: &[u8]) -> Result<(), error::Error> {
+        if address % 4 == 0 && data.len() % 4 == 0 {
+            let mut buffer = vec![0u32; data.len() / 4];
+            self.read_32(address, &mut buffer)?;
+            for (bytes, value) in data.chunks_exact_mut(4).zip(buffer.iter()) {
+                bytes.copy_from_slice(&u32::to_le_bytes(*value));
+            }
+        } else {
+            let start_extra_count = (address % 4) as usize;
+            let mut buffer = vec![0u32; (start_extra_count + data.len() + 3) / 4];
+            let read_address = address - start_extra_count as u32;
+            self.read_32(read_address, &mut buffer)?;
+            for (bytes, value) in data
+                .chunks_exact_mut(4)
+                .zip(buffer[start_extra_count..start_extra_count + data.len()].iter())
+            {
+                bytes.copy_from_slice(&u32::to_le_bytes(*value));
+            }
+        }
+        Ok(())
+    }
 
     /// Flush any outstanding operations.
     ///
@@ -174,6 +188,13 @@ impl<'probe> Memory<'probe> {
         self.inner.read_8(self.ap_sel, address, data)
     }
 
+    /// Read a block of 8bit words at `address`. May use 32 bit memory access,
+    /// so should only be used if reading memory locations that don't have side
+    /// effects. Generally faster than [`MemoryInterface::read_8`].
+    fn read(&mut self, address: u32, data: &mut [u8]) -> Result<(), error::Error> {
+        self.inner.read(self.ap_sel, address, data)
+    }
+
     pub fn write_word_32(&mut self, addr: u32, data: u32) -> Result<(), error::Error> {
         self.inner.write_32(self.ap_sel, addr, &[data])
     }
@@ -188,6 +209,13 @@ impl<'probe> Memory<'probe> {
 
     pub fn write_8(&mut self, addr: u32, data: &[u8]) -> Result<(), error::Error> {
         self.inner.write_8(self.ap_sel, addr, data)
+    }
+
+    /// Read a block of 8bit words at `address`. May use 32 bit memory access,
+    /// so should only be used if writeing memory locations that don't have side
+    /// effects. Generally faster than [`MemoryInterface::write_8`].
+    fn write(&mut self, address: u32, data: &[u8]) -> Result<(), error::Error> {
+        self.inner.write(self.ap_sel, address, data)
     }
 
     pub fn flush(&mut self) -> Result<(), error::Error> {
