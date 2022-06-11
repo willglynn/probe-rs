@@ -1,0 +1,1865 @@
+---
+name: XMC4000
+manufacturer: ~
+variants:
+  - name: XMC4100-F64x128
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536862720
+            end: 536883136
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134348800
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4200_4100_128
+      - xmc4200_4100c_128
+  - name: XMC4100-Q48x128
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536862720
+            end: 536883136
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134348800
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4200_4100_128
+      - xmc4200_4100c_128
+  - name: XMC4104-F64x128
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536862720
+            end: 536883136
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134348800
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4200_4100_128
+      - xmc4200_4100c_128
+  - name: XMC4104-F64x64
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536862720
+            end: 536883136
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134283264
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4200_4100_64
+      - xmc4200_4100c_64
+  - name: XMC4104-Q48x128
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536862720
+            end: 536883136
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134348800
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4200_4100_128
+      - xmc4200_4100c_128
+  - name: XMC4104-Q48x64
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536862720
+            end: 536883136
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134283264
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4200_4100_64
+      - xmc4200_4100c_64
+  - name: XMC4108-F64x64
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536862720
+            end: 536883136
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134283264
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4200_4100_64
+      - xmc4200_4100c_64
+  - name: XMC4108-Q48x64
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536862720
+            end: 536883136
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134283264
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4200_4100_64
+      - xmc4200_4100c_64
+  - name: XMC4200-F64x256
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536854528
+            end: 536895424
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134479872
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4200_4100_256
+      - xmc4200_4100c_256
+  - name: XMC4200-Q48x256
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536854528
+            end: 536895424
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134479872
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4200_4100_256
+      - xmc4200_4100c_256
+  - name: XMC4300-F100x256
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536805376
+            end: 536936384
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134479872
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4300_256
+      - xmc4300c_256
+  - name: XMC4400-F100x256
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536854528
+            end: 536936384
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134479872
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4400_256
+      - xmc4400c_256
+  - name: XMC4400-F100x512
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536854528
+            end: 536936384
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134742016
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4400_512
+      - xmc4400c_512
+  - name: XMC4400-F64x256
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536854528
+            end: 536936384
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134479872
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4400_256
+      - xmc4400c_256
+  - name: XMC4400-F64x512
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536854528
+            end: 536936384
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134742016
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4400_512
+      - xmc4400c_512
+  - name: XMC4402-F100x256
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536854528
+            end: 536936384
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134479872
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4400_256
+      - xmc4400c_256
+  - name: XMC4402-F64x256
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536854528
+            end: 536936384
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134479872
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4400_256
+      - xmc4400c_256
+  - name: XMC4500-E144x1024
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268500992
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 135266304
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4500_1024
+      - xmc4500c_1024
+  - name: XMC4500-F100x1024
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268500992
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 135266304
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4500_1024
+      - xmc4500c_1024
+  - name: XMC4500-F100x768
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268500992
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 135004160
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4500_768
+      - xmc4500c_768
+  - name: XMC4500-F144x1024
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268500992
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 135266304
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4500_1024
+      - xmc4500c_1024
+  - name: XMC4500-F144x768
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268500992
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 135004160
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4500_768
+      - xmc4500c_768
+  - name: XMC4502-F100x768
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268500992
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 135004160
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4500_768
+      - xmc4500c_768
+  - name: XMC4504-F100x512
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268500992
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134742016
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4500_512
+      - xmc4500c_512
+  - name: XMC4504-F144x512
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 268435456
+            end: 268500992
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 134742016
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4500_512
+      - xmc4500c_512
+  - name: XMC4700-E196x1536
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536772608
+            end: 537055168
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 135790592
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4800_1536
+      - xmc4800c_1536
+  - name: XMC4700-E196x2048
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536772608
+            end: 537132992
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 136314880
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4800_2048
+      - xmc4800c_2048
+  - name: XMC4700-F100x1536
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536772608
+            end: 537055168
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 135790592
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4800_1536
+      - xmc4800c_1536
+  - name: XMC4700-F100x2048
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536772608
+            end: 537132992
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 136314880
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4800_2048
+      - xmc4800c_2048
+  - name: XMC4700-F144x1536
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536772608
+            end: 537055168
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 135790592
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4800_1536
+      - xmc4800c_1536
+  - name: XMC4700-F144x2048
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536772608
+            end: 537132992
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 136314880
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4800_2048
+      - xmc4800c_2048
+  - name: XMC4800-E196x1024
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536797184
+            end: 537001920
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 135266304
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4800_1024
+      - xmc4800c_1024
+  - name: XMC4800-E196x1536
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536772608
+            end: 537055168
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 135790592
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4800_1536
+      - xmc4800c_1536
+  - name: XMC4800-E196x2048
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536772608
+            end: 537132992
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 136314880
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4800_2048
+      - xmc4800c_2048
+  - name: XMC4800-F100x1024
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536797184
+            end: 537001920
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 135266304
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4800_1024
+      - xmc4800c_1024
+  - name: XMC4800-F100x1536
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536772608
+            end: 537055168
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 135790592
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4800_1536
+      - xmc4800c_1536
+  - name: XMC4800-F100x2048
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536772608
+            end: 537132992
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 136314880
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4800_2048
+      - xmc4800c_2048
+  - name: XMC4800-F144x1024
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536797184
+            end: 537001920
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 135266304
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4800_1024
+      - xmc4800c_1024
+  - name: XMC4800-F144x1536
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536772608
+            end: 537055168
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 135790592
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4800_1536
+      - xmc4800c_1536
+  - name: XMC4800-F144x2048
+    part: ~
+    cores:
+      - name: main
+        type: armv7em
+        core_access_options:
+          Arm:
+            ap: 0
+            psel: 0
+            debug_base: ~
+            cti_base: ~
+    memory_map:
+      - Ram:
+          name: ~
+          range:
+            start: 536772608
+            end: 537132992
+          is_boot_memory: false
+          cores:
+            - main
+      - Nvm:
+          name: ~
+          range:
+            start: 134217728
+            end: 136314880
+          is_boot_memory: true
+          cores:
+            - main
+    flash_algorithms:
+      - xmc4800_2048
+      - xmc4800c_2048
+flash_algorithms:
+  - name: xmc4200_4100_128
+    description: XMC4200/4100 128kB Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1N0n1IkphqiRMYTVLVSKaYoAlTWFMYZpiMCHqBBBDAWAxSAFpyQf80QBpL0kIQADQASAwvfC1AySkBgEmLE8sTbYDIEb/99v/rEIB0qQZBOC8QgLSASBABCQYrELx0wAg8L33tQVGI0wAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33RxI/yEBMUhEAPCV+BlIOkZIRAKZAPAw+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAABAwAAAIMCAAAAPi1BCos04MHEtALeEkcA3BAHFIegwcL0At4SRwDcEAcUh6DBwTQC3hJHANwQBxSHosHmw8F0Mka3wAgI94bCMkK4P/3P//4vR1GCMn9QBxGtEAsQxDAEh8EKvXS8wjJGlIe8NQLeEkcA3BAHFIe6tQLeEkcA3BAHAEq5NQJeAFw+L0B4ATACR8EKfvSiwcB1QKAgBzJBwDQAnBwRwApC9DDBwLQAnBAHEkeAikE04MHAtUCgIAciR7j5wAi7ucAIt/nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 165
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 512
+    flash_properties:
+      address_range:
+        start: 201326592
+        end: 201457664
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+    cores: []
+  - name: xmc4200_4100c_128
+    description: XMC4200/4100 128kB cached Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1N0n1IkphqiRMYTVLVSKaYoAlTWFMYZpiMCHqBBBDAWAxSAFpyQf80QBpL0kIQADQASAwvfC1AySkBgEmLE8sTbYDIEb/99v/rEIB0qQZBOC8QgLSASBABCQYrELx0wAg8L33tQVGI0wAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33RxI/yEBMUhEAPCV+BlIOkZIRAKZAPAw+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAABAwAAAIMCAAAAPi1BCos04MHEtALeEkcA3BAHFIegwcL0At4SRwDcEAcUh6DBwTQC3hJHANwQBxSHosHmw8F0Mka3wAgI94bCMkK4P/3P//4vR1GCMn9QBxGtEAsQxDAEh8EKvXS8wjJGlIe8NQLeEkcA3BAHFIe6tQLeEkcA3BAHAEq5NQJeAFw+L0B4ATACR8EKfvSiwcB1QKAgBzJBwDQAnBwRwApC9DDBwLQAnBAHEkeAikE04MHAtUCgIAciR7j5wAi7ucAIt/nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 165
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 512
+    flash_properties:
+      address_range:
+        start: 134217728
+        end: 134348800
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+    cores: []
+  - name: xmc4200_4100_64
+    description: XMC4200/4100 64kB Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1Okn1IkphqiRMYThLVSKaYoAlTWFMYZpiMCHqBBBDAWA0SAFpyQf80QBpMkkIQADQASAwvfC1AySkBi9OAScvTb8DIEb/99v/tEIB0uQZCuAsSIRCAtIBIEAEA+CsQgLSASCABCQYrELr0wAg8L33tQVGJEwAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33R1I/yEBMUhEAPCX+BpIOkZIRAKZAPAy+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAAAgwAAAEMAAAEDAgAAAD4tQQqLNODBxLQC3hJHANwQBxSHoMHC9ALeEkcA3BAHFIegwcE0At4SRwDcEAcUh6LB5sPBdDJGt8AICPeGwjJCuD/9zf/+L0dRgjJ/UAcRrRALEMQwBIfBCr10vMIyRpSHvDUC3hJHANwQBxSHurUC3hJHANwQBwBKuTUCXgBcPi9AeAEwAkfBCn70osHAdUCgIAcyQcA0AJwcEcAKQvQwwcC0AJwQBxJHgIpBNODBwLVAoCAHIke4+cAIu7nACLf5wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 177
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 528
+    flash_properties:
+      address_range:
+        start: 201326592
+        end: 201392128
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+    cores: []
+  - name: xmc4200_4100c_64
+    description: XMC4200/4100 64kB cached Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1Okn1IkphqiRMYThLVSKaYoAlTWFMYZpiMCHqBBBDAWA0SAFpyQf80QBpMkkIQADQASAwvfC1AySkBi9OAScvTb8DIEb/99v/tEIB0uQZCuAsSIRCAtIBIEAEA+CsQgLSASCABCQYrELr0wAg8L33tQVGJEwAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33R1I/yEBMUhEAPCX+BpIOkZIRAKZAPAy+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAAAgwAAAEMAAAEDAgAAAD4tQQqLNODBxLQC3hJHANwQBxSHoMHC9ALeEkcA3BAHFIegwcE0At4SRwDcEAcUh6LB5sPBdDJGt8AICPeGwjJCuD/9zf/+L0dRgjJ/UAcRrRALEMQwBIfBCr10vMIyRpSHvDUC3hJHANwQBxSHurUC3hJHANwQBwBKuTUCXgBcPi9AeAEwAkfBCn70osHAdUCgIAcyQcA0AJwcEcAKQvQwwcC0AJwQBxJHgIpBNODBwLVAoCAHIke4+cAIu7nACLf5wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 177
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 528
+    flash_properties:
+      address_range:
+        start: 134217728
+        end: 134283264
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+    cores: []
+  - name: xmc4200_4100_256
+    description: XMC4200/4100 256kB Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1N0n1IkphqiRMYTVLVSKaYoAlTWFMYZpiMCHqBBBDAWAxSAFpyQf80QBpL0kIQADQASAwvfC1AySkBixOAScsTb8DIEb/99v/tEIB0uQZBOCsQgLSASBABCQYrELx0wAg8L33tQVGI0wAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33RxI/yEBMUhEAPCV+BlIOkZIRAKZAPAw+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAAAgwAAAQMCAAAAPi1BCos04MHEtALeEkcA3BAHFIegwcL0At4SRwDcEAcUh6DBwTQC3hJHANwQBxSHosHmw8F0Mka3wAgI94bCMkK4P/3P//4vR1GCMn9QBxGtEAsQxDAEh8EKvXS8wjJGlIe8NQLeEkcA3BAHFIe6tQLeEkcA3BAHAEq5NQJeAFw+L0B4ATACR8EKfvSiwcB1QKAgBzJBwDQAnBwRwApC9DDBwLQAnBAHEkeAikE04MHAtUCgIAciR7j5wAi7ucAIt/nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 165
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 512
+    flash_properties:
+      address_range:
+        start: 201326592
+        end: 201588736
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+    cores: []
+  - name: xmc4200_4100c_256
+    description: XMC4200/4100 256kB cached Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1N0n1IkphqiRMYTVLVSKaYoAlTWFMYZpiMCHqBBBDAWAxSAFpyQf80QBpL0kIQADQASAwvfC1AySkBixOAScsTb8DIEb/99v/tEIB0uQZBOCsQgLSASBABCQYrELx0wAg8L33tQVGI0wAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33RxI/yEBMUhEAPCV+BlIOkZIRAKZAPAw+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAAAgwAAAQMCAAAAPi1BCos04MHEtALeEkcA3BAHFIegwcL0At4SRwDcEAcUh6DBwTQC3hJHANwQBxSHosHmw8F0Mka3wAgI94bCMkK4P/3P//4vR1GCMn9QBxGtEAsQxDAEh8EKvXS8wjJGlIe8NQLeEkcA3BAHFIe6tQLeEkcA3BAHAEq5NQJeAFw+L0B4ATACR8EKfvSiwcB1QKAgBzJBwDQAnBwRwApC9DDBwLQAnBAHEkeAikE04MHAtUCgIAciR7j5wAi7ucAIt/nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 165
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 512
+    flash_properties:
+      address_range:
+        start: 134217728
+        end: 134479872
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+    cores: []
+  - name: xmc4300_256
+    description: XMC4300 256kB Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1N0n1IkphqiRMYTVLVSKaYoAlTWFMYZpiMCHqBBBDAWAxSAFpyQf80QBpL0kIQADQASAwvfC1AySkBixOAScsTb8DIEb/99v/tEIB0uQZBOCsQgLSASBABCQYrELx0wAg8L33tQVGI0wAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33RxI/yEBMUhEAPCV+BlIOkZIRAKZAPAw+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAAAgwAAAQMCAAAAPi1BCos04MHEtALeEkcA3BAHFIegwcL0At4SRwDcEAcUh6DBwTQC3hJHANwQBxSHosHmw8F0Mka3wAgI94bCMkK4P/3P//4vR1GCMn9QBxGtEAsQxDAEh8EKvXS8wjJGlIe8NQLeEkcA3BAHFIe6tQLeEkcA3BAHAEq5NQJeAFw+L0B4ATACR8EKfvSiwcB1QKAgBzJBwDQAnBwRwApC9DDBwLQAnBAHEkeAikE04MHAtUCgIAciR7j5wAi7ucAIt/nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 165
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 512
+    flash_properties:
+      address_range:
+        start: 201326592
+        end: 201588736
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+    cores: []
+  - name: xmc4300c_256
+    description: XMC4300 256kB cached Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1N0n1IkphqiRMYTVLVSKaYoAlTWFMYZpiMCHqBBBDAWAxSAFpyQf80QBpL0kIQADQASAwvfC1AySkBixOAScsTb8DIEb/99v/tEIB0uQZBOCsQgLSASBABCQYrELx0wAg8L33tQVGI0wAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33RxI/yEBMUhEAPCV+BlIOkZIRAKZAPAw+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAAAgwAAAQMCAAAAPi1BCos04MHEtALeEkcA3BAHFIegwcL0At4SRwDcEAcUh6DBwTQC3hJHANwQBxSHosHmw8F0Mka3wAgI94bCMkK4P/3P//4vR1GCMn9QBxGtEAsQxDAEh8EKvXS8wjJGlIe8NQLeEkcA3BAHFIe6tQLeEkcA3BAHAEq5NQJeAFw+L0B4ATACR8EKfvSiwcB1QKAgBzJBwDQAnBwRwApC9DDBwLQAnBAHEkeAikE04MHAtUCgIAciR7j5wAi7ucAIt/nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 165
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 512
+    flash_properties:
+      address_range:
+        start: 134217728
+        end: 134479872
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+    cores: []
+  - name: xmc4400_256
+    description: XMC4400 256kB Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1N0n1IkphqiRMYTVLVSKaYoAlTWFMYZpiMCHqBBBDAWAxSAFpyQf80QBpL0kIQADQASAwvfC1AySkBixOAScsTb8DIEb/99v/tEIB0uQZBOCsQgLSASBABCQYrELx0wAg8L33tQVGI0wAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33RxI/yEBMUhEAPCV+BlIOkZIRAKZAPAw+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAAAgwAAAQMCAAAAPi1BCos04MHEtALeEkcA3BAHFIegwcL0At4SRwDcEAcUh6DBwTQC3hJHANwQBxSHosHmw8F0Mka3wAgI94bCMkK4P/3P//4vR1GCMn9QBxGtEAsQxDAEh8EKvXS8wjJGlIe8NQLeEkcA3BAHFIe6tQLeEkcA3BAHAEq5NQJeAFw+L0B4ATACR8EKfvSiwcB1QKAgBzJBwDQAnBwRwApC9DDBwLQAnBAHEkeAikE04MHAtUCgIAciR7j5wAi7ucAIt/nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 165
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 512
+    flash_properties:
+      address_range:
+        start: 201326592
+        end: 201588736
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+    cores: []
+  - name: xmc4400c_256
+    description: XMC4400 256kB cached Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1N0n1IkphqiRMYTVLVSKaYoAlTWFMYZpiMCHqBBBDAWAxSAFpyQf80QBpL0kIQADQASAwvfC1AySkBixOAScsTb8DIEb/99v/tEIB0uQZBOCsQgLSASBABCQYrELx0wAg8L33tQVGI0wAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33RxI/yEBMUhEAPCV+BlIOkZIRAKZAPAw+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAAAgwAAAQMCAAAAPi1BCos04MHEtALeEkcA3BAHFIegwcL0At4SRwDcEAcUh6DBwTQC3hJHANwQBxSHosHmw8F0Mka3wAgI94bCMkK4P/3P//4vR1GCMn9QBxGtEAsQxDAEh8EKvXS8wjJGlIe8NQLeEkcA3BAHFIe6tQLeEkcA3BAHAEq5NQJeAFw+L0B4ATACR8EKfvSiwcB1QKAgBzJBwDQAnBwRwApC9DDBwLQAnBAHEkeAikE04MHAtUCgIAciR7j5wAi7ucAIt/nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 165
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 512
+    flash_properties:
+      address_range:
+        start: 134217728
+        end: 134479872
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+    cores: []
+  - name: xmc4400_512
+    description: XMC4400 512kB Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1Okn1IkphqiRMYThLVSKaYoAlTWFMYZpiMCHqBBBDAWA0SAFpyQf80QBpMkkIQADQASAwvfC1AySkBi9OAScvTb8DIEb/99v/tEIB0uQZCuAsSIRCAtIBIEAEA+CsQgLSASCABCQYrELr0wAg8L33tQVGJEwAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33R1I/yEBMUhEAPCX+BpIOkZIRAKZAPAy+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAAAgwAAAgMAAAEDAgAAAD4tQQqLNODBxLQC3hJHANwQBxSHoMHC9ALeEkcA3BAHFIegwcE0At4SRwDcEAcUh6LB5sPBdDJGt8AICPeGwjJCuD/9zf/+L0dRgjJ/UAcRrRALEMQwBIfBCr10vMIyRpSHvDUC3hJHANwQBxSHurUC3hJHANwQBwBKuTUCXgBcPi9AeAEwAkfBCn70osHAdUCgIAcyQcA0AJwcEcAKQvQwwcC0AJwQBxJHgIpBNODBwLVAoCAHIke4+cAIu7nACLf5wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 177
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 528
+    flash_properties:
+      address_range:
+        start: 201326592
+        end: 201850880
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+        - size: 262144
+          address: 262144
+    cores: []
+  - name: xmc4400c_512
+    description: XMC4400 512kB cached Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1Okn1IkphqiRMYThLVSKaYoAlTWFMYZpiMCHqBBBDAWA0SAFpyQf80QBpMkkIQADQASAwvfC1AySkBi9OAScvTb8DIEb/99v/tEIB0uQZCuAsSIRCAtIBIEAEA+CsQgLSASCABCQYrELr0wAg8L33tQVGJEwAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33R1I/yEBMUhEAPCX+BpIOkZIRAKZAPAy+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAAAgwAAAgMAAAEDAgAAAD4tQQqLNODBxLQC3hJHANwQBxSHoMHC9ALeEkcA3BAHFIegwcE0At4SRwDcEAcUh6LB5sPBdDJGt8AICPeGwjJCuD/9zf/+L0dRgjJ/UAcRrRALEMQwBIfBCr10vMIyRpSHvDUC3hJHANwQBxSHurUC3hJHANwQBwBKuTUCXgBcPi9AeAEwAkfBCn70osHAdUCgIAcyQcA0AJwcEcAKQvQwwcC0AJwQBxJHgIpBNODBwLVAoCAHIke4+cAIu7nACLf5wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 177
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 528
+    flash_properties:
+      address_range:
+        start: 134217728
+        end: 134742016
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+        - size: 262144
+          address: 262144
+    cores: []
+  - name: xmc4500_1024
+    description: XMC4500 1024kB Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1Okn1IkphqiRMYThLVSKaYoAlTWFMYZpiMCHqBBBDAWA0SAFpyQf80QBpMkkIQADQASAwvfC1AyQBJ6QGL06/A8ElLQUgRv/32v+0QgHS5BkK4CpIhEIC0gEgQAQD4KxCAtIBIIAEJBisQuvTACDwvfe1BUYjTAAgASYPRkxEtgYpGDFDCXgAKS3RQBz/KPfdHEj/IQExSEQA8JT4GUg6RkhEApkA8C/4EE/1IHhhUCB4YQ1IACGAMAzMAmNDYwgx/yn53aogeGEJSlUhkWKgIXlhNUMoYAZIAWnJB/zRAGkFSQhAANABIP69QFUADICqAAwAIABYAAgAgAAAAgwAAAQMBAAAAPi1BCos04MHEtALeEkcA3BAHFIegwcL0At4SRwDcEAcUh6DBwTQC3hJHANwQBxSHosHmw8F0Mka3wAgI94bCMkK4P/3Of/4vR1GCMn9QBxGtEAsQxDAEh8EKvXS8wjJGlIe8NQLeEkcA3BAHFIe6tQLeEkcA3BAHAEq5NQJeAFw+L0B4ATACR8EKfvSiwcB1QKAgBzJBwDQAnBwRwApC9DDBwLQAnBAHEkeAikE04MHAtUCgIAciR7j5wAi7ucAIt/nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 179
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 524
+    flash_properties:
+      address_range:
+        start: 201326592
+        end: 202375168
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+        - size: 262144
+          address: 262144
+    cores: []
+  - name: xmc4500c_1024
+    description: XMC4500 1024kB cached Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1Okn1IkphqiRMYThLVSKaYoAlTWFMYZpiMCHqBBBDAWA0SAFpyQf80QBpMkkIQADQASAwvfC1AyQBJ6QGL06/A8ElLQUgRv/32v+0QgHS5BkK4CpIhEIC0gEgQAQD4KxCAtIBIIAEJBisQuvTACDwvfe1BUYjTAAgASYPRkxEtgYpGDFDCXgAKS3RQBz/KPfdHEj/IQExSEQA8JT4GUg6RkhEApkA8C/4EE/1IHhhUCB4YQ1IACGAMAzMAmNDYwgx/yn53aogeGEJSlUhkWKgIXlhNUMoYAZIAWnJB/zRAGkFSQhAANABIP69QFUADICqAAwAIABYAAgAgAAAAgwAAAQMBAAAAPi1BCos04MHEtALeEkcA3BAHFIegwcL0At4SRwDcEAcUh6DBwTQC3hJHANwQBxSHosHmw8F0Mka3wAgI94bCMkK4P/3Of/4vR1GCMn9QBxGtEAsQxDAEh8EKvXS8wjJGlIe8NQLeEkcA3BAHFIe6tQLeEkcA3BAHAEq5NQJeAFw+L0B4ATACR8EKfvSiwcB1QKAgBzJBwDQAnBwRwApC9DDBwLQAnBAHEkeAikE04MHAtUCgIAciR7j5wAi7ucAIt/nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 179
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 524
+    flash_properties:
+      address_range:
+        start: 134217728
+        end: 135266304
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+        - size: 262144
+          address: 262144
+    cores: []
+  - name: xmc4500_768
+    description: XMC4500 768kB Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1Okn1IkphqiRMYThLVSKaYoAlTWFMYZpiMCHqBBBDAWA0SAFpyQf80QBpMkkIQADQASAwvfC1AySkBi9OAScvTb8DIEb/99v/tEIB0uQZCuAsSIRCAtIBIEAEA+CsQgLSASCABCQYrELr0wAg8L33tQVGJEwAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33R1I/yEBMUhEAPCX+BpIOkZIRAKZAPAy+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAAAgwAAAwMAAAEDAgAAAD4tQQqLNODBxLQC3hJHANwQBxSHoMHC9ALeEkcA3BAHFIegwcE0At4SRwDcEAcUh6LB5sPBdDJGt8AICPeGwjJCuD/9zf/+L0dRgjJ/UAcRrRALEMQwBIfBCr10vMIyRpSHvDUC3hJHANwQBxSHurUC3hJHANwQBwBKuTUCXgBcPi9AeAEwAkfBCn70osHAdUCgIAcyQcA0AJwcEcAKQvQwwcC0AJwQBxJHgIpBNODBwLVAoCAHIke4+cAIu7nACLf5wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 177
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 528
+    flash_properties:
+      address_range:
+        start: 201326592
+        end: 202113024
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+        - size: 262144
+          address: 262144
+    cores: []
+  - name: xmc4500c_768
+    description: XMC4500 768kB cached Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1Okn1IkphqiRMYThLVSKaYoAlTWFMYZpiMCHqBBBDAWA0SAFpyQf80QBpMkkIQADQASAwvfC1AySkBi9OAScvTb8DIEb/99v/tEIB0uQZCuAsSIRCAtIBIEAEA+CsQgLSASCABCQYrELr0wAg8L33tQVGJEwAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33R1I/yEBMUhEAPCX+BpIOkZIRAKZAPAy+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAAAgwAAAwMAAAEDAgAAAD4tQQqLNODBxLQC3hJHANwQBxSHoMHC9ALeEkcA3BAHFIegwcE0At4SRwDcEAcUh6LB5sPBdDJGt8AICPeGwjJCuD/9zf/+L0dRgjJ/UAcRrRALEMQwBIfBCr10vMIyRpSHvDUC3hJHANwQBxSHurUC3hJHANwQBwBKuTUCXgBcPi9AeAEwAkfBCn70osHAdUCgIAcyQcA0AJwcEcAKQvQwwcC0AJwQBxJHgIpBNODBwLVAoCAHIke4+cAIu7nACLf5wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 177
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 528
+    flash_properties:
+      address_range:
+        start: 134217728
+        end: 135004160
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+        - size: 262144
+          address: 262144
+    cores: []
+  - name: xmc4500_512
+    description: XMC4500 512kB Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1Okn1IkphqiRMYThLVSKaYoAlTWFMYZpiMCHqBBBDAWA0SAFpyQf80QBpMkkIQADQASAwvfC1AySkBi9OAScvTb8DIEb/99v/tEIB0uQZCuAsSIRCAtIBIEAEA+CsQgLSASCABCQYrELr0wAg8L33tQVGJEwAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33R1I/yEBMUhEAPCX+BpIOkZIRAKZAPAy+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAAAgwAAAgMAAAEDAgAAAD4tQQqLNODBxLQC3hJHANwQBxSHoMHC9ALeEkcA3BAHFIegwcE0At4SRwDcEAcUh6LB5sPBdDJGt8AICPeGwjJCuD/9zf/+L0dRgjJ/UAcRrRALEMQwBIfBCr10vMIyRpSHvDUC3hJHANwQBxSHurUC3hJHANwQBwBKuTUCXgBcPi9AeAEwAkfBCn70osHAdUCgIAcyQcA0AJwcEcAKQvQwwcC0AJwQBxJHgIpBNODBwLVAoCAHIke4+cAIu7nACLf5wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 177
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 528
+    flash_properties:
+      address_range:
+        start: 201326592
+        end: 201850880
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+        - size: 262144
+          address: 262144
+    cores: []
+  - name: xmc4500c_512
+    description: XMC4500 512kB cached Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1Okn1IkphqiRMYThLVSKaYoAlTWFMYZpiMCHqBBBDAWA0SAFpyQf80QBpMkkIQADQASAwvfC1AySkBi9OAScvTb8DIEb/99v/tEIB0uQZCuAsSIRCAtIBIEAEA+CsQgLSASCABCQYrELr0wAg8L33tQVGJEwAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33R1I/yEBMUhEAPCX+BpIOkZIRAKZAPAy+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAAAgwAAAgMAAAEDAgAAAD4tQQqLNODBxLQC3hJHANwQBxSHoMHC9ALeEkcA3BAHFIegwcE0At4SRwDcEAcUh6LB5sPBdDJGt8AICPeGwjJCuD/9zf/+L0dRgjJ/UAcRrRALEMQwBIfBCr10vMIyRpSHvDUC3hJHANwQBxSHurUC3hJHANwQBwBKuTUCXgBcPi9AeAEwAkfBCn70osHAdUCgIAcyQcA0AJwcEcAKQvQwwcC0AJwQBxJHgIpBNODBwLVAoCAHIke4+cAIu7nACLf5wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 177
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 528
+    flash_properties:
+      address_range:
+        start: 134217728
+        end: 134742016
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+        - size: 262144
+          address: 262144
+    cores: []
+  - name: xmc4800_1536
+    description: XMC4800 1536kB Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1Okn1IkphqiRMYThLVSKaYoAlTWFMYZpiMCHqBBBDAWA0SAFpyQf80QBpMkkIQADQASAwvfC1AySkBi9OAScvTb8DIEb/99v/tEIB0uQZCuAsSIRCAtIBIEAEA+CsQgLSASCABCQYrELr0wAg8L33tQVGJEwAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33R1I/yEBMUhEAPCX+BpIOkZIRAKZAPAy+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAAAgwAABgMAAAEDAgAAAD4tQQqLNODBxLQC3hJHANwQBxSHoMHC9ALeEkcA3BAHFIegwcE0At4SRwDcEAcUh6LB5sPBdDJGt8AICPeGwjJCuD/9zf/+L0dRgjJ/UAcRrRALEMQwBIfBCr10vMIyRpSHvDUC3hJHANwQBxSHurUC3hJHANwQBwBKuTUCXgBcPi9AeAEwAkfBCn70osHAdUCgIAcyQcA0AJwcEcAKQvQwwcC0AJwQBxJHgIpBNODBwLVAoCAHIke4+cAIu7nACLf5wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 177
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 528
+    flash_properties:
+      address_range:
+        start: 201326592
+        end: 202899456
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+        - size: 262144
+          address: 262144
+    cores: []
+  - name: xmc4800c_1536
+    description: XMC4500 512kB cached Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1Okn1IkphqiRMYThLVSKaYoAlTWFMYZpiMCHqBBBDAWA0SAFpyQf80QBpMkkIQADQASAwvfC1AySkBi9OAScvTb8DIEb/99v/tEIB0uQZCuAsSIRCAtIBIEAEA+CsQgLSASCABCQYrELr0wAg8L33tQVGJEwAIAEmD0ZMRLYGKRgxQwl4ACkt0UAc/yj33R1I/yEBMUhEAPCX+BpIOkZIRAKZAPAy+BBP9SB4YVAgeGEOSAAhgDAMzAJjQ2MIMf8p+d2qIHhhCUpVIZFioCF5YTVDKGAHSAFpyQf80QBpBUkIQADQASD+vQAAQFUADICqAAwAIABYAAgAgAAAAgwAABgMAAAEDAgAAAD4tQQqLNODBxLQC3hJHANwQBxSHoMHC9ALeEkcA3BAHFIegwcE0At4SRwDcEAcUh6LB5sPBdDJGt8AICPeGwjJCuD/9zf/+L0dRgjJ/UAcRrRALEMQwBIfBCr10vMIyRpSHvDUC3hJHANwQBxSHurUC3hJHANwQBwBKuTUCXgBcPi9AeAEwAkfBCn70osHAdUCgIAcyQcA0AJwcEcAKQvQwwcC0AJwQBxJHgIpBNODBwLVAoCAHIke4+cAIu7nACLf5wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 177
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 528
+    flash_properties:
+      address_range:
+        start: 134217728
+        end: 135790592
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+        - size: 262144
+          address: 262144
+    cores: []
+  - name: xmc4800_2048
+    description: XMC4800 2048kB Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1Okn1IkphqiRMYThLVSKaYoAlTWFMYZpiMCHqBBBDAWA0SAFpyQf80QBpMkkIQADQASAwvfC1AyQBJ6QGL06/A2ElbQUgRv/32v+0QgHS5BkK4CpIhEIC0gEgQAQD4KxCAtIBIIAEJBisQuvTACDwvfe1BUYjTAAgASYPRkxEtgYpGDFDCXgAKS3RQBz/KPfdHEj/IQExSEQA8JT4GUg6RkhEApkA8C/4EE/1IHhhUCB4YQ1IACGAMAzMAmNDYwgx/yn53aogeGEJSlUhkWKgIXlhNUMoYAZIAWnJB/zRAGkFSQhAANABIP69QFUADICqAAwAIABYAAgAgAAAAgwAAAQMBAAAAPi1BCos04MHEtALeEkcA3BAHFIegwcL0At4SRwDcEAcUh6DBwTQC3hJHANwQBxSHosHmw8F0Mka3wAgI94bCMkK4P/3Of/4vR1GCMn9QBxGtEAsQxDAEh8EKvXS8wjJGlIe8NQLeEkcA3BAHFIe6tQLeEkcA3BAHAEq5NQJeAFw+L0B4ATACR8EKfvSiwcB1QKAgBzJBwDQAnBwRwApC9DDBwLQAnBAHEkeAikE04MHAtUCgIAciR7j5wAi7ucAIt/nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 179
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 524
+    flash_properties:
+      address_range:
+        start: 201326592
+        end: 203423744
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+        - size: 262144
+          address: 262144
+    cores: []
+  - name: xmc4800c_2048
+    description: XMC4800 2048kB cached Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1Okn1IkphqiRMYThLVSKaYoAlTWFMYZpiMCHqBBBDAWA0SAFpyQf80QBpMkkIQADQASAwvfC1AyQBJ6QGL06/A2ElbQUgRv/32v+0QgHS5BkK4CpIhEIC0gEgQAQD4KxCAtIBIIAEJBisQuvTACDwvfe1BUYjTAAgASYPRkxEtgYpGDFDCXgAKS3RQBz/KPfdHEj/IQExSEQA8JT4GUg6RkhEApkA8C/4EE/1IHhhUCB4YQ1IACGAMAzMAmNDYwgx/yn53aogeGEJSlUhkWKgIXlhNUMoYAZIAWnJB/zRAGkFSQhAANABIP69QFUADICqAAwAIABYAAgAgAAAAgwAAAQMBAAAAPi1BCos04MHEtALeEkcA3BAHFIegwcL0At4SRwDcEAcUh6DBwTQC3hJHANwQBxSHosHmw8F0Mka3wAgI94bCMkK4P/3Of/4vR1GCMn9QBxGtEAsQxDAEh8EKvXS8wjJGlIe8NQLeEkcA3BAHFIe6tQLeEkcA3BAHAEq5NQJeAFw+L0B4ATACR8EKfvSiwcB1QKAgBzJBwDQAnBwRwApC9DDBwLQAnBAHEkeAikE04MHAtUCgIAciR7j5wAi7ucAIt/nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 179
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 524
+    flash_properties:
+      address_range:
+        start: 134217728
+        end: 136314880
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+        - size: 262144
+          address: 262144
+    cores: []
+  - name: xmc4800_1024
+    description: XMC4800 1024kB Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1Okn1IkphqiRMYThLVSKaYoAlTWFMYZpiMCHqBBBDAWA0SAFpyQf80QBpMkkIQADQASAwvfC1AyQBJ6QGL06/A8ElLQUgRv/32v+0QgHS5BkK4CpIhEIC0gEgQAQD4KxCAtIBIIAEJBisQuvTACDwvfe1BUYjTAAgASYPRkxEtgYpGDFDCXgAKS3RQBz/KPfdHEj/IQExSEQA8JT4GUg6RkhEApkA8C/4EE/1IHhhUCB4YQ1IACGAMAzMAmNDYwgx/yn53aogeGEJSlUhkWKgIXlhNUMoYAZIAWnJB/zRAGkFSQhAANABIP69QFUADICqAAwAIABYAAgAgAAAAgwAAAQMBAAAAPi1BCos04MHEtALeEkcA3BAHFIegwcL0At4SRwDcEAcUh6DBwTQC3hJHANwQBxSHosHmw8F0Mka3wAgI94bCMkK4P/3Of/4vR1GCMn9QBxGtEAsQxDAEh8EKvXS8wjJGlIe8NQLeEkcA3BAHFIe6tQLeEkcA3BAHAEq5NQJeAFw+L0B4ATACR8EKfvSiwcB1QKAgBzJBwDQAnBwRwApC9DDBwLQAnBAHEkeAikE04MHAtUCgIAciR7j5wAi7ucAIt/nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 179
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 524
+    flash_properties:
+      address_range:
+        start: 201326592
+        end: 202375168
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+        - size: 262144
+          address: 262144
+    cores: []
+  - name: xmc4800c_1024
+    description: XMC4800 1024kB cached Flash
+    default: true
+    instructions: cLUFRgxGFkYC4A/MD8UQPhAu+tIILgLTA8wDxQg+BC4H0wHMAcU2HwPgIXgpcGQcbRx2HvnScL0AIHBHACBwRzC1Okn1IkphqiRMYThLVSKaYoAlTWFMYZpiMCHqBBBDAWA0SAFpyQf80QBpMkkIQADQASAwvfC1AyQBJ6QGL06/A8ElLQUgRv/32v+0QgHS5BkK4CpIhEIC0gEgQAQD4KxCAtIBIIAEJBisQuvTACDwvfe1BUYjTAAgASYPRkxEtgYpGDFDCXgAKS3RQBz/KPfdHEj/IQExSEQA8JT4GUg6RkhEApkA8C/4EE/1IHhhUCB4YQ1IACGAMAzMAmNDYwgx/yn53aogeGEJSlUhkWKgIXlhNUMoYAZIAWnJB/zRAGkFSQhAANABIP69QFUADICqAAwAIABYAAgAgAAAAgwAAAQMBAAAAPi1BCos04MHEtALeEkcA3BAHFIegwcL0At4SRwDcEAcUh6DBwTQC3hJHANwQBxSHosHmw8F0Mka3wAgI94bCMkK4P/3Of/4vR1GCMn9QBxGtEAsQxDAEh8EKvXS8wjJGlIe8NQLeEkcA3BAHFIe6tQLeEkcA3BAHAEq5NQJeAFw+L0B4ATACR8EKfvSiwcB1QKAgBzJBwDQAnBwRwApC9DDBwLQAnBAHEkeAikE04MHAtUCgIAciR7j5wAi7ucAIt/nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+    load_address: ~
+    pc_init: 57
+    pc_uninit: 61
+    pc_program_page: 179
+    pc_erase_sector: 65
+    pc_erase_all: 119
+    data_section_offset: 524
+    flash_properties:
+      address_range:
+        start: 134217728
+        end: 135266304
+      page_size: 256
+      erased_byte_value: 0
+      program_page_timeout: 100
+      erase_sector_timeout: 20000
+      sectors:
+        - size: 16384
+          address: 0
+        - size: 131072
+          address: 131072
+        - size: 262144
+          address: 262144
+    cores: []
